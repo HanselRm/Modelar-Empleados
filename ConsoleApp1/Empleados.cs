@@ -1,4 +1,5 @@
-﻿using System;
+﻿using C_Empleados;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,8 @@ namespace ConsoleApp1
         public double SalarioxH { get; set; }
         public String HorasTrabajadas { get; set; }
         public double SalarioNeto { get; set; }
+
+        Departamentos departamentos;
 
     }
 

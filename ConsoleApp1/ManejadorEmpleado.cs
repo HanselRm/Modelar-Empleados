@@ -22,6 +22,7 @@ namespace ConsoleApp1
             Utilidades.ImprimirMensaje(@"
                                         Ingrese el Numero del departamento
                                      1-Gerencial 2-Administrativo 3-Operativo");
+
             em.Departamento = Console.ReadLine() ?? "";
 
             Utilidades.ImprimirMensaje("Ingrese el precio por hora");
@@ -59,6 +60,6 @@ namespace ConsoleApp1
             //asd
         }
 
-       
+       public static 
     }
 }
