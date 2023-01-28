@@ -12,5 +12,7 @@ namespace C_Empleados
         Gerente gerente;
         Operativo operativo;
         Administrativo administrativo;
+
+        
     }
 }
