@@ -8,7 +8,7 @@ namespace ConsoleApp1
 {
     internal class Gerente
     {
-        Empleados empleado;
+        private static string Codigo;
 
         private static Gerente gerente;
 
@@ -19,7 +19,10 @@ namespace ConsoleApp1
             if(gerente == null)
             {
                 gerente = new Gerente();
+                int generador = new Random().Next(1000,9999);
+                Codigo = $"GER{generador}";
             }
+
             return gerente;
         }
     }

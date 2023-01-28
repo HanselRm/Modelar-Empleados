@@ -19,8 +19,16 @@ namespace ConsoleApp1
             Utilidades.ImprimirMensaje("Ingrese el Nombre");
             em.Nombre = Console.ReadLine()??"";
 
-            Utilidades.ImprimirMensaje("Ingrese el Numero del departamento");
-            em.Nombre = Console.ReadLine() ?? "";
+            Utilidades.ImprimirMensaje(@"
+                                        Ingrese el Numero del departamento
+                                     1-Gerencial 2-Administrativo 3-Operativo");
+            em.Departamento = Console.ReadLine() ?? "";
+
+            Utilidades.ImprimirMensaje("Ingrese el precio por hora");
+            em.SalarioxH = double.Parse(Console.ReadLine() ?? "");
+
+            Utilidades.ImprimirMensaje("Ingrese las horas trabajadas");
+            em.SalarioNeto = double.Parse(Console.ReadLine() ?? "");
 
             return em;
                 
