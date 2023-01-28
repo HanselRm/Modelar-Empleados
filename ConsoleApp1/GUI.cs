@@ -9,7 +9,7 @@ namespace ConsoleApp1
 {
     static class GUI
     {
-        public static void MenuPrincipal(int sueldo)
+        public static Empleados MenuPrincipal(Empleados em)
         {
             Boolean bucle = true;
             while (bucle)
@@ -24,24 +24,26 @@ namespace ConsoleApp1
                 4- Salir                  
                 ");
                 string opcion = Console.ReadLine()??"";
+                
                 switch (opcion)
                 {
                     case "1":
                         Utilidades.LimpiarPantalla();
-                        ManejadorEmpleado.crearEmpleado();
-                    break;
+                        em = ManejadorEmpleado.crearEmpleado();
+                        Utilidades.Pausa();
+                        break;
 
                     case "2":
                         Utilidades.LimpiarPantalla();
-                        Utilidades.ImprimirMensaje("Opcion 2");
-                        ManejadorEmpleado.verEmpleados();
+                        ManejadorEmpleado.verEmpleados(em);
+                        Utilidades.Pausa();
                     break;
 
                     case "3":
-                        Utilidades.LimpiarPantalla();
-                        ManejadorEmpleado.Cobrar(sueldo);
+                        
+                        em = ManejadorEmpleado.Cobrar(em);
+                        Utilidades.Pausa();
 
-                        //MenuCobrar();
                         break;
 
                     case "4":
@@ -50,8 +52,11 @@ namespace ConsoleApp1
 
                         bucle = false;
                     break;
+
                 }
+              
             }
+            return em;
         }
 
     }

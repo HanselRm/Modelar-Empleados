@@ -17,5 +17,14 @@ namespace C_Empleados
         {
             Console.WriteLine(mensaje);
         }
+
+        public static void Pausa()
+        {
+            Utilidades.ImprimirMensaje("Presione cualquier tecla para continuar...");
+            Console.ReadKey();
+        }
+
     }
+
+    
 }

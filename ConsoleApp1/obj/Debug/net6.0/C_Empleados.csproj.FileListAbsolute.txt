@@ -13,3 +13,18 @@ C:\Users\hanse\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Escrito
 C:\Users\hanse\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Escritorio\Carpetas\Itla\Programacion\PRACTICA #1\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\C_Empleados.pdb
 C:\Users\hanse\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Escritorio\Carpetas\Itla\Programacion\PRACTICA #1\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\C_Empleados.genruntimeconfig.cache
 C:\Users\hanse\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Escritorio\Carpetas\Itla\Programacion\PRACTICA #1\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\ref\C_Empleados.dll
+C:\Users\hanse\Escritorio\Carpetas\Itla\Programacion\PRACTICA #1\ConsoleApp1\ConsoleApp1\bin\Debug\net6.0\C_Empleados.exe
+C:\Users\hanse\Escritorio\Carpetas\Itla\Programacion\PRACTICA #1\ConsoleApp1\ConsoleApp1\bin\Debug\net6.0\C_Empleados.deps.json
+C:\Users\hanse\Escritorio\Carpetas\Itla\Programacion\PRACTICA #1\ConsoleApp1\ConsoleApp1\bin\Debug\net6.0\C_Empleados.runtimeconfig.json
+C:\Users\hanse\Escritorio\Carpetas\Itla\Programacion\PRACTICA #1\ConsoleApp1\ConsoleApp1\bin\Debug\net6.0\C_Empleados.dll
+C:\Users\hanse\Escritorio\Carpetas\Itla\Programacion\PRACTICA #1\ConsoleApp1\ConsoleApp1\bin\Debug\net6.0\C_Empleados.pdb
+C:\Users\hanse\Escritorio\Carpetas\Itla\Programacion\PRACTICA #1\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\C_Empleados.csproj.AssemblyReference.cache
+C:\Users\hanse\Escritorio\Carpetas\Itla\Programacion\PRACTICA #1\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\C_Empleados.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hanse\Escritorio\Carpetas\Itla\Programacion\PRACTICA #1\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\C_Empleados.AssemblyInfoInputs.cache
+C:\Users\hanse\Escritorio\Carpetas\Itla\Programacion\PRACTICA #1\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\C_Empleados.AssemblyInfo.cs
+C:\Users\hanse\Escritorio\Carpetas\Itla\Programacion\PRACTICA #1\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\C_Empleados.csproj.CoreCompileInputs.cache
+C:\Users\hanse\Escritorio\Carpetas\Itla\Programacion\PRACTICA #1\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\C_Empleados.dll
+C:\Users\hanse\Escritorio\Carpetas\Itla\Programacion\PRACTICA #1\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\refint\C_Empleados.dll
+C:\Users\hanse\Escritorio\Carpetas\Itla\Programacion\PRACTICA #1\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\C_Empleados.pdb
+C:\Users\hanse\Escritorio\Carpetas\Itla\Programacion\PRACTICA #1\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\C_Empleados.genruntimeconfig.cache
+C:\Users\hanse\Escritorio\Carpetas\Itla\Programacion\PRACTICA #1\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\ref\C_Empleados.dll

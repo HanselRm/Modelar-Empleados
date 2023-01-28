@@ -14,7 +14,7 @@ namespace ConsoleApp1
         public String Nombre { get; set; }
         public String Departamento { get; set; }
         public double SalarioxH { get; set; }
-        public String HorasTrabajadas { get; set; }
+        public double HorasTrabajadas { get; set; }
         public double SalarioNeto { get; set; }
 
         Departamentos departamentos;

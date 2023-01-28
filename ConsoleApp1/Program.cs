@@ -4,7 +4,9 @@ public class Program
 {
     public static void Main()
     {
-        int sueldo = 2;
-        GUI.MenuPrincipal(sueldo);
+        Empleados em = new Empleados();
+        em = GUI.MenuPrincipal(em);
+
+        Console.WriteLine(em.Nombre);
     }
 }
