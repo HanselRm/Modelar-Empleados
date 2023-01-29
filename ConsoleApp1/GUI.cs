@@ -40,7 +40,9 @@ namespace ConsoleApp1
                     break;
 
                     case "3":
-                        //em = ManejadorEmpleado.Cobrar(em);
+                        Empleados em = new Empleados();
+                        //Array em =  emple.ToArray();
+                        //ManejadorEmpleado.Cobrar(em);
                         Utilidades.Pausa();
 
                         break;

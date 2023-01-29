@@ -55,13 +55,13 @@ namespace ConsoleApp1
 
         }
 
-        public static Empleados Cobrar (Empleados ems) 
-            {
+        public static Empleados Cobrar(Empleados ems)
+        {
             ems.SalarioNeto = CalcularSueldo(ems);
 
             return ems;
-                
-            }
+
+        }
 
         public static double CalcularSueldo(Empleados em)
         {
