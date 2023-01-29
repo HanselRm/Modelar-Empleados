@@ -40,14 +40,12 @@ namespace ConsoleApp1
                     break;
 
                     case "3":
-                        
                         em = ManejadorEmpleado.Cobrar(em);
                         Utilidades.Pausa();
 
                         break;
 
                     case "4":
-                        Utilidades.LimpiarPantalla();
                         Utilidades.ImprimirMensaje("Que pase buenas");
 
                         bucle = false;
