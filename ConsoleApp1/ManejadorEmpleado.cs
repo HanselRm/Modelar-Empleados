@@ -9,7 +9,7 @@ namespace ConsoleApp1
 {
     static class ManejadorEmpleado
     {
-        public static Empleados crearEmpleado()
+        public static List<Empleados> crearEmpleado(List<Empleados> emple)
             {
             Empleados em = new Empleados();
 
@@ -34,15 +34,26 @@ namespace ConsoleApp1
             Utilidades.ImprimirMensaje("Ingrese las horas trabajadas");
             em.HorasTrabajadas = double.Parse(Console.ReadLine() ?? "");
 
-            return em;
+            emple.Add(em);
+            return emple;
                 
             }
 
-        public static void verEmpleados(Empleados em)
+        public static void verEmpleados(List<Empleados> emple)
             {
-            Console.WriteLine($"Nombre es: {em.Nombre}  Cedula: {em.Cedula} Salario {em.SalarioNeto}");
-                
-            }
+            foreach (Empleados empleados in emple)
+                {
+                    Console.WriteLine($@"
+                        Cedula: {empleados.Cedula}
+                        Nombre: {empleados.Nombre}
+                        Salario por Horas: {empleados.SalarioxH}
+                        Horas trabajadas: {empleados.HorasTrabajadas}
+                        Ha cobrado: {empleados.SalarioNeto}
+                    
+                    ");
+                }
+
+        }
 
         public static Empleados Cobrar (Empleados ems) 
             {

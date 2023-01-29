@@ -5,8 +5,9 @@ public class Program
     public static void Main()
     {
         Empleados em = new Empleados();
-        em = GUI.MenuPrincipal(em);
+        List<Empleados> emple = new List<Empleados>();
+        GUI.MenuPrincipal(emple);
 
-        Console.WriteLine(em.Nombre);
+        
     }
 }

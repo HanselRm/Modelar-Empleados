@@ -9,7 +9,7 @@ namespace ConsoleApp1
 {
     static class GUI
     {
-        public static Empleados MenuPrincipal(Empleados em)
+        public static void MenuPrincipal(List<Empleados> emple)
         {
             Boolean bucle = true;
             while (bucle)
@@ -29,18 +29,18 @@ namespace ConsoleApp1
                 {
                     case "1":
                         Utilidades.LimpiarPantalla();
-                        em = ManejadorEmpleado.crearEmpleado();
+                        emple = ManejadorEmpleado.crearEmpleado(emple);
                         Utilidades.Pausa();
                         break;
 
                     case "2":
                         Utilidades.LimpiarPantalla();
-                        ManejadorEmpleado.verEmpleados(em);
+                        ManejadorEmpleado.verEmpleados(emple);
                         Utilidades.Pausa();
                     break;
 
                     case "3":
-                        em = ManejadorEmpleado.Cobrar(em);
+                        //em = ManejadorEmpleado.Cobrar(em);
                         Utilidades.Pausa();
 
                         break;
@@ -54,7 +54,7 @@ namespace ConsoleApp1
                 }
               
             }
-            return em;
+
         }
 
     }
