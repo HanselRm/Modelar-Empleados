@@ -43,6 +43,7 @@ namespace ConsoleApp1
                         Empleados em = new Empleados();
                         //Array em =  emple.ToArray();
                         //ManejadorEmpleado.Cobrar(em);
+
                         Utilidades.Pausa();
 
                         break;
