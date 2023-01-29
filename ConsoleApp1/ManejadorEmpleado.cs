@@ -75,6 +75,6 @@ namespace ConsoleApp1
             return codigo;
         }
 
-       //public static 
+      
     }
 }
