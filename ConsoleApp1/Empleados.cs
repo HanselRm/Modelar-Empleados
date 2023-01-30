@@ -10,16 +10,17 @@ namespace ConsoleApp1
     internal class Empleados
     {
         public int Cedula { get; set; }
-        public int Codigo { get; set; }
+        public string Codigo { get; set; }
         public String Nombre { get; set; }
         public String Departamento { get; set; }
         public double SalarioxH { get; set; }
         public double HorasTrabajadas { get; set; }
         public double SalarioNeto { get; set; }
+        public string Tipodepa { get; set; }
 
-        Departamentos departamentos;
+        public IDepartamentos departamentos;
 
-
+    
 
     }
 

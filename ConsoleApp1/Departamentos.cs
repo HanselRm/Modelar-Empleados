@@ -7,12 +7,42 @@ using System.Threading.Tasks;
 
 namespace C_Empleados
 {
-    internal class Departamentos
+    interface IDepartamentos
     {
-        Gerente gerente;
-        Operativo operativo;
-        Administrativo administrativo;
+        string codigo();
+        string tipoDepartamento();
 
-        
+        public static IDepartamentos Comprobar(Empleados emple)
+        {
+            if (emple.Departamento == "1")
+            {
+                return Gerente.GetGerente();
+            }
+            else if (emple.Departamento == "2")
+            {
+                return new Administrativo();
+            }
+
+            else if (emple.Departamento == "3")
+            {
+                return new Operativo();
+            }
+
+            else
+            {
+                Console.WriteLine("Ese departamento no existe");
+                return null;
+            }
+
+           
+        }
+
+        public string Depa()
+        {
+            return $"{tipoDepartamento}";
+        }
+
+
+
     }
 }

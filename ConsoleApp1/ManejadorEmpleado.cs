@@ -27,6 +27,7 @@ namespace ConsoleApp1
 
             em.Departamento = Console.ReadLine() ?? "";
 
+            em.departamentos = IDepartamentos.Comprobar(em);
 
             Utilidades.ImprimirMensaje("Ingrese el precio por hora");
             em.SalarioxH = double.Parse(Console.ReadLine() ?? "");
@@ -39,51 +40,50 @@ namespace ConsoleApp1
                 
             }
 
+
         public static void verEmpleados(List<Empleados> emple)
             {
             foreach (Empleados empleados in emple)
                 {
+                empleados.Codigo = empleados.departamentos.codigo();
+                empleados.Tipodepa = empleados.departamentos.tipoDepartamento();
                     Console.WriteLine($@"
                         Cedula: {empleados.Cedula}
+                        Codigo: {empleados.Codigo}
                         Nombre: {empleados.Nombre}
+                        Departamento: {empleados.Tipodepa}
                         Salario por Horas: {empleados.SalarioxH}
                         Horas trabajadas: {empleados.HorasTrabajadas}
-                    
+                    -------------------------------------------------------------------------------
                     ");
                 }
 
         }
 
-        //public static Empleados Cobrar(Empleados ems)
-        //{
-        //    ems.SalarioNeto = CalcularSueldo(ems);
-
-        //    return ems;
-
-        //}
+        
 
         public static void CalcularSueldo(List<Empleados> emple)
         {
             foreach (Empleados empleados in emple)
             {
                empleados.SalarioNeto = empleados.SalarioxH * empleados.HorasTrabajadas;
-                
+                empleados.Codigo = empleados.departamentos.codigo();
+                string depart = empleados.departamentos.Depa();
+
                 Console.WriteLine($@"
                         Cedula: {empleados.Cedula}
+                        Codigo: {empleados.Codigo}
                         Nombre: {empleados.Nombre}
+                        Departamento: {depart}
                         Salario por Horas: {empleados.SalarioxH}
                         Horas trabajadas: {empleados.HorasTrabajadas}
                         Ha cobrado: {empleados.SalarioNeto}
-                    
+                    -------------------------------------------------------------------------------
                     ");
             }
         }
 
-        public static string GenerarCodigo()
-        {
-            string codigo = "";
-            return codigo;
-        }
+        
 
      
     }

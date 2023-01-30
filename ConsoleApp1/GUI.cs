@@ -41,6 +41,7 @@ namespace ConsoleApp1
 
                     case "3":
                         Empleados em = new Empleados();
+                        Utilidades.LimpiarPantalla();
                         ManejadorEmpleado.CalcularSueldo(emple);
                         Utilidades.Pausa();
 

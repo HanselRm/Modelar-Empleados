@@ -1,4 +1,5 @@
-﻿using System;
+﻿using C_Empleados;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,9 +7,8 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    internal class Gerente
+    public class Gerente : IDepartamentos
     {
-        private static string Codigo;
 
         private static Gerente gerente;
 
@@ -19,11 +19,23 @@ namespace ConsoleApp1
             if(gerente == null)
             {
                 gerente = new Gerente();
-                int generador = new Random().Next(1000,9999);
-                Codigo = $"GER{generador}";
+                string Codigo = gerente.codigo();
             }
 
             return gerente;
+        }
+
+        public string codigo()
+        {
+            int generador = new Random().Next(1000, 9999);
+            string codigo = $"Adm {generador}";
+            return codigo;
+        }
+
+        public string tipoDepartamento()
+        {
+            string depa = "Administrativo";
+            return depa;
         }
     }
 }
