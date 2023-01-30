@@ -48,25 +48,35 @@ namespace ConsoleApp1
                         Nombre: {empleados.Nombre}
                         Salario por Horas: {empleados.SalarioxH}
                         Horas trabajadas: {empleados.HorasTrabajadas}
-                        Ha cobrado: {empleados.SalarioNeto}
                     
                     ");
                 }
 
         }
 
-        public static Empleados Cobrar(Empleados ems)
+        //public static Empleados Cobrar(Empleados ems)
+        //{
+        //    ems.SalarioNeto = CalcularSueldo(ems);
+
+        //    return ems;
+
+        //}
+
+        public static void CalcularSueldo(List<Empleados> emple)
         {
-            ems.SalarioNeto = CalcularSueldo(ems);
-
-            return ems;
-
-        }
-
-        public static double CalcularSueldo(Empleados em)
-        {
-            double salario = (em.SalarioxH * em.HorasTrabajadas);
-            return salario;
+            foreach (Empleados empleados in emple)
+            {
+               empleados.SalarioNeto = empleados.SalarioxH * empleados.HorasTrabajadas;
+                
+                Console.WriteLine($@"
+                        Cedula: {empleados.Cedula}
+                        Nombre: {empleados.Nombre}
+                        Salario por Horas: {empleados.SalarioxH}
+                        Horas trabajadas: {empleados.HorasTrabajadas}
+                        Ha cobrado: {empleados.SalarioNeto}
+                    
+                    ");
+            }
         }
 
         public static string GenerarCodigo()
@@ -75,6 +85,6 @@ namespace ConsoleApp1
             return codigo;
         }
 
-      
+     
     }
 }

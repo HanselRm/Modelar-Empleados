@@ -41,9 +41,7 @@ namespace ConsoleApp1
 
                     case "3":
                         Empleados em = new Empleados();
-                        //Array em =  emple.ToArray();
-                        //ManejadorEmpleado.Cobrar(em);
-                            //
+                        ManejadorEmpleado.CalcularSueldo(emple);
                         Utilidades.Pausa();
 
                         break;
