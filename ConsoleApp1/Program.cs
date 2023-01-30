@@ -1,4 +1,5 @@
-﻿using ConsoleApp1;
+﻿using C_Empleados.Menus;
+using ConsoleApp1;
 
 public class Program
 {

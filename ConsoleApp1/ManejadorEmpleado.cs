@@ -1,4 +1,5 @@
 ﻿using C_Empleados;
+using C_Empleados.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,6 +28,7 @@ namespace ConsoleApp1
 
             em.Departamento = Console.ReadLine() ?? "";
 
+            em.departamentos = IDepartamentos.Comprobar(em);
 
             Utilidades.ImprimirMensaje("Ingrese el precio por hora");
             em.SalarioxH = double.Parse(Console.ReadLine() ?? "");
@@ -39,42 +41,66 @@ namespace ConsoleApp1
                 
             }
 
+
         public static void verEmpleados(List<Empleados> emple)
             {
             foreach (Empleados empleados in emple)
                 {
+                empleados.Codigo = empleados.departamentos.codigo();
+                string estado = empleados.departamentos.status();
+                string depart = empleados.departamentos.tipoDepartamento();
+                string estadoEmple = "activo";
+                    if (estado == "ocupado")
+                    {
+                    estadoEmple = "Indefinido";
+                    }
                     Console.WriteLine($@"
                         Cedula: {empleados.Cedula}
+                        Codigo: {empleados.Codigo}
                         Nombre: {empleados.Nombre}
+                        Departamento: {depart}
+                        Estado: {estadoEmple}
                         Salario por Horas: {empleados.SalarioxH}
                         Horas trabajadas: {empleados.HorasTrabajadas}
-                        Ha cobrado: {empleados.SalarioNeto}
-                    
+                    -------------------------------------------------------------------------------
                     ");
                 }
 
         }
 
-        public static Empleados Cobrar(Empleados ems)
+        
+
+        public static void CalcularSueldo(List<Empleados> emple)
         {
-            ems.SalarioNeto = CalcularSueldo(ems);
+            foreach (Empleados empleados in emple)
+            {
+                empleados.SalarioNeto = empleados.SalarioxH * empleados.HorasTrabajadas;
+                empleados.Codigo = empleados.departamentos.codigo();
+                string estado = empleados.departamentos.status();
+                string depart = empleados.departamentos.tipoDepartamento();
+                string estadoEmple = "activo";
+                if (estado == "ocupado")
+                {
+                    empleados.SalarioNeto = 0;
+                   estadoEmple = "Indefinido";
+                }
 
-            return ems;
-
+                Console.WriteLine($@"
+                        Cedula: {empleados.Cedula}
+                        Codigo: {empleados.Codigo}
+                        Nombre: {empleados.Nombre}
+                        Departamento: {depart}
+                        Estado: {estadoEmple}
+                        Salario por Horas: {empleados.SalarioxH}
+                        Horas trabajadas: {empleados.HorasTrabajadas}
+                        Ha cobrado: {empleados.SalarioNeto}
+                    -------------------------------------------------------------------------------
+                    ");
+            }
         }
 
-        public static double CalcularSueldo(Empleados em)
-        {
-            double salario = (em.SalarioxH * em.HorasTrabajadas);
-            return salario;
-        }
+        
 
-        public static string GenerarCodigo()
-        {
-            string codigo = "";
-            return codigo;
-        }
-
-      
+     
     }
 }

@@ -1,17 +1,18 @@
 ﻿using C_Empleados;
+using ConsoleApp1;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp1
+namespace C_Empleados.Menus
 {
     static class GUI
     {
         public static void MenuPrincipal(List<Empleados> emple)
         {
-            Boolean bucle = true;
+            bool bucle = true;
             while (bucle)
             {
                 Utilidades.LimpiarPantalla();
@@ -23,8 +24,8 @@ namespace ConsoleApp1
                 3- Cobrar sueldo
                 4- Salir                  
                 ");
-                string opcion = Console.ReadLine()??"";
-                
+                string opcion = Console.ReadLine() ?? "";
+
                 switch (opcion)
                 {
                     case "1":
@@ -37,13 +38,12 @@ namespace ConsoleApp1
                         Utilidades.LimpiarPantalla();
                         ManejadorEmpleado.verEmpleados(emple);
                         Utilidades.Pausa();
-                    break;
+                        break;
 
                     case "3":
                         Empleados em = new Empleados();
-                        //Array em =  emple.ToArray();
-                        //ManejadorEmpleado.Cobrar(em);
-                            //
+                        Utilidades.LimpiarPantalla();
+                        ManejadorEmpleado.CalcularSueldo(emple);
                         Utilidades.Pausa();
 
                         break;
@@ -52,10 +52,10 @@ namespace ConsoleApp1
                         Utilidades.ImprimirMensaje("Que pase buenas");
 
                         bucle = false;
-                    break;
+                        break;
 
                 }
-              
+
             }
 
         }
