@@ -46,12 +46,12 @@ namespace ConsoleApp1
             foreach (Empleados empleados in emple)
                 {
                 empleados.Codigo = empleados.departamentos.codigo();
-                empleados.Tipodepa = empleados.departamentos.tipoDepartamento();
-                    Console.WriteLine($@"
+                string depart = empleados.departamentos.tipoDepartamento();
+                Console.WriteLine($@"
                         Cedula: {empleados.Cedula}
                         Codigo: {empleados.Codigo}
                         Nombre: {empleados.Nombre}
-                        Departamento: {empleados.Tipodepa}
+                        Departamento: {depart}
                         Salario por Horas: {empleados.SalarioxH}
                         Horas trabajadas: {empleados.HorasTrabajadas}
                     -------------------------------------------------------------------------------
@@ -68,7 +68,7 @@ namespace ConsoleApp1
             {
                empleados.SalarioNeto = empleados.SalarioxH * empleados.HorasTrabajadas;
                 empleados.Codigo = empleados.departamentos.codigo();
-                string depart = empleados.departamentos.Depa();
+                string depart = empleados.departamentos.tipoDepartamento();
 
                 Console.WriteLine($@"
                         Cedula: {empleados.Cedula}

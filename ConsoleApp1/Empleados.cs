@@ -16,7 +16,6 @@ namespace ConsoleApp1
         public double SalarioxH { get; set; }
         public double HorasTrabajadas { get; set; }
         public double SalarioNeto { get; set; }
-        public string Tipodepa { get; set; }
 
         public IDepartamentos departamentos;
 
