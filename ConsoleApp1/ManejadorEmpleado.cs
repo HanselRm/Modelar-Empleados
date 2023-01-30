@@ -1,4 +1,5 @@
 ﻿using C_Empleados;
+using C_Empleados.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -46,12 +47,19 @@ namespace ConsoleApp1
             foreach (Empleados empleados in emple)
                 {
                 empleados.Codigo = empleados.departamentos.codigo();
+                string estado = empleados.departamentos.status();
                 string depart = empleados.departamentos.tipoDepartamento();
-                Console.WriteLine($@"
+                string estadoEmple = "activo";
+                    if (estado == "ocupado")
+                    {
+                    estadoEmple = "Indefinido";
+                    }
+                    Console.WriteLine($@"
                         Cedula: {empleados.Cedula}
                         Codigo: {empleados.Codigo}
                         Nombre: {empleados.Nombre}
                         Departamento: {depart}
+                        Estado: {estadoEmple}
                         Salario por Horas: {empleados.SalarioxH}
                         Horas trabajadas: {empleados.HorasTrabajadas}
                     -------------------------------------------------------------------------------
@@ -66,15 +74,23 @@ namespace ConsoleApp1
         {
             foreach (Empleados empleados in emple)
             {
-               empleados.SalarioNeto = empleados.SalarioxH * empleados.HorasTrabajadas;
+                empleados.SalarioNeto = empleados.SalarioxH * empleados.HorasTrabajadas;
                 empleados.Codigo = empleados.departamentos.codigo();
+                string estado = empleados.departamentos.status();
                 string depart = empleados.departamentos.tipoDepartamento();
+                string estadoEmple = "activo";
+                if (estado == "ocupado")
+                {
+                    empleados.SalarioNeto = 0;
+                   estadoEmple = "Indefinido";
+                }
 
                 Console.WriteLine($@"
                         Cedula: {empleados.Cedula}
                         Codigo: {empleados.Codigo}
                         Nombre: {empleados.Nombre}
                         Departamento: {depart}
+                        Estado: {estadoEmple}
                         Salario por Horas: {empleados.SalarioxH}
                         Horas trabajadas: {empleados.HorasTrabajadas}
                         Ha cobrado: {empleados.SalarioNeto}

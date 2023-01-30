@@ -1,4 +1,4 @@
-﻿using C_Empleados;
+﻿using C_Empleados.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +12,7 @@ namespace ConsoleApp1
         public string codigo()
         {
             int generador = new Random().Next(1000, 9999);
-            string codigo = $"Ope{generador}";
+            string codigo = $"OPE{generador}";
             return codigo;
         }
 
@@ -20,6 +20,11 @@ namespace ConsoleApp1
         {
             string depa = "Operativo";
             return depa;
+        }
+        public string status()
+        {
+            string estado = "";
+            return estado;
         }
     }
 }

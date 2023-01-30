@@ -1,4 +1,4 @@
-﻿using C_Empleados;
+﻿using C_Empleados.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -5,11 +5,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace C_Empleados
+namespace C_Empleados.Interfaces
 {
     interface IDepartamentos
     {
         string codigo();
+        string status();
         string tipoDepartamento();
 
         public static IDepartamentos Comprobar(Empleados emple)
@@ -34,7 +35,7 @@ namespace C_Empleados
                 return null;
             }
 
-           
+
         }
 
         public string Depa()
