@@ -30,6 +30,8 @@ namespace ConsoleApp1
 
             em.departamentos = IDepartamentos.Comprobar(em);
 
+            em.Codigo = em.departamentos.codigo();
+
             Utilidades.ImprimirMensaje("Ingrese el precio por hora");
             em.SalarioxH = double.Parse(Console.ReadLine() ?? "");
 
@@ -46,7 +48,6 @@ namespace ConsoleApp1
             {
             foreach (Empleados empleados in emple)
                 {
-                empleados.Codigo = empleados.departamentos.codigo();
                 string estado = empleados.departamentos.status();
                 string depart = empleados.departamentos.tipoDepartamento();
                 string estadoEmple = "activo";
@@ -75,7 +76,6 @@ namespace ConsoleApp1
             foreach (Empleados empleados in emple)
             {
                 empleados.SalarioNeto = empleados.SalarioxH * empleados.HorasTrabajadas;
-                empleados.Codigo = empleados.departamentos.codigo();
                 string estado = empleados.departamentos.status();
                 string depart = empleados.departamentos.tipoDepartamento();
                 string estadoEmple = "activo";
