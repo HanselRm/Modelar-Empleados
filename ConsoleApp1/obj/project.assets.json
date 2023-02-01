@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hanse\\Escritorio\\Carpetas\\Itla\\Programacion\\PRACTICA #1\\ConsoleApp1\\ConsoleApp1\\C_Empleados.csproj",
+      "projectUniqueName": "C:\\Users\\hanse\\Escritorio\\Carpetas\\Itla\\Programacion\\Singleton\\PRACTICA #1\\ConsoleApp1\\ConsoleApp1\\C_Empleados.csproj",
       "projectName": "C_Empleados",
-      "projectPath": "C:\\Users\\hanse\\Escritorio\\Carpetas\\Itla\\Programacion\\PRACTICA #1\\ConsoleApp1\\ConsoleApp1\\C_Empleados.csproj",
+      "projectPath": "C:\\Users\\hanse\\Escritorio\\Carpetas\\Itla\\Programacion\\Singleton\\PRACTICA #1\\ConsoleApp1\\ConsoleApp1\\C_Empleados.csproj",
       "packagesPath": "C:\\Users\\hanse\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hanse\\Escritorio\\Carpetas\\Itla\\Programacion\\PRACTICA #1\\ConsoleApp1\\ConsoleApp1\\obj\\",
+      "outputPath": "C:\\Users\\hanse\\Escritorio\\Carpetas\\Itla\\Programacion\\Singleton\\PRACTICA #1\\ConsoleApp1\\ConsoleApp1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\hanse\\AppData\\Roaming\\NuGet\\NuGet.Config",

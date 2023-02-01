@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    public class Gerente : IDepartamentos
+    public class Gerente : IDepartamentos 
     {
         public string type= "";
         public string estado = "";

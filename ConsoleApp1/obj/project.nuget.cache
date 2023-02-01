@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eLQE08qxQxsncUXbvQNWPemgUEY75TBk0SbQ5IpKcWCdGnWCE/CXGZcUBATL6dBOGpBEgWGAai63JKo7fOeT8Q==",
+  "dgSpecHash": "vICsGmw3vhosQtrerMUcjYJwbfuBQCOpy7ynFmLLFVFgfXTRBZVYp3Ca++8mSydKSX5H65Ia0u3Sx3o2aeRCIA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hanse\\Escritorio\\Carpetas\\Itla\\Programacion\\PRACTICA #1\\ConsoleApp1\\ConsoleApp1\\C_Empleados.csproj",
+  "projectFilePath": "C:\\Users\\hanse\\Escritorio\\Carpetas\\Itla\\Programacion\\Singleton\\PRACTICA #1\\ConsoleApp1\\ConsoleApp1\\C_Empleados.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

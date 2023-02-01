@@ -28,7 +28,7 @@ namespace ConsoleApp1
 
             em.Departamento = Console.ReadLine() ?? "";
 
-            em.departamentos = IDepartamentos.Comprobar(em);
+            em.departamentos = Fabrica.Comprobar(em);
 
             em.Codigo = em.departamentos.codigo();
 

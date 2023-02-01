@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    class Administrativo : IDepartamentos
+    class Administrativo : IDepartamentos 
     {
         public string codigo()
         {
