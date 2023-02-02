@@ -22,7 +22,8 @@ namespace C_Empleados.Menus
                 1- Crear Empleado
                 2- Ver Empleado
                 3- Cobrar sueldo
-                4- Salir                  
+                4- Voucher De Pago    
+                5- Salir
                 ");
                 string opcion = Console.ReadLine() ?? "";
 
@@ -49,6 +50,12 @@ namespace C_Empleados.Menus
                         break;
 
                     case "4":
+                        Utilidades.LimpiarPantalla();
+                        //ManejadorEmpleado.Voucher();
+                        Utilidades.Pausa();
+                        break;
+
+                    case "5":
                         Utilidades.ImprimirMensaje("Que pase buenas");
 
                         bucle = false;

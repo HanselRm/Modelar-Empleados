@@ -10,7 +10,7 @@ namespace C_Empleados
 {
     internal static  class Fabrica
     {
-        public static IDepartamentos Comprobar(Empleados emple)
+        public static IDepartamentos? Comprobar(Empleados emple)
         {
             if (emple.Departamento == "1")
             {
