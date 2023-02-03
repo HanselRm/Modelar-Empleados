@@ -1,4 +1,5 @@
 ﻿using C_Empleados;
+using C_Empleados.Factory;
 using C_Empleados.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -75,10 +76,11 @@ namespace ConsoleApp1
         {
             foreach (Empleados empleados in emple)
             {
-                empleados.SalarioNeto = empleados.SalarioxH * empleados.HorasTrabajadas;
-                string estado = empleados.departamentos.status();
-                string depart = empleados.departamentos.tipoDepartamento();
+                empleados.SalarioNeto = CalcularSalarioNeto(empleados);
+                string estado = SacarStatus(empleados);
+                string depart = SacarTipoDepa(empleados);
                 string estadoEmple = "activo";
+
                 if (estado == "ocupado")
                 {
                     empleados.SalarioNeto = 0;
@@ -100,10 +102,21 @@ namespace ConsoleApp1
         
         }
 
-        
+        public static double CalcularSalarioNeto(Empleados empleados)
+        {
+            double salario = empleados.SalarioxH * empleados.HorasTrabajadas;
+            return salario;
+        }
 
+        public static string SacarTipoDepa (Empleados em)
+        {
+            return em.departamentos.tipoDepartamento();
+        }
 
-
+        public static string SacarStatus(Empleados em)
+        {
+            return em.departamentos.status();
+        }
 
     }
 }

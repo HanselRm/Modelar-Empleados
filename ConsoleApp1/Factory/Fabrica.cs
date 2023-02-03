@@ -6,11 +6,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace C_Empleados
+namespace C_Empleados.Factory
 {
-    internal static  class Fabrica
+    internal static class Fabrica
     {
-        public static IDepartamentos? Comprobar(Empleados emple)
+        public static IDepartamentos Comprobar(Empleados emple)
         {
             if (emple.Departamento == "1")
             {

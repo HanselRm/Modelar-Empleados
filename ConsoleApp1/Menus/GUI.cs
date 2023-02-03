@@ -1,5 +1,4 @@
-﻿using C_Empleados;
-using ConsoleApp1;
+﻿using ConsoleApp1;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -51,8 +50,7 @@ namespace C_Empleados.Menus
 
                     case "4":
                         Utilidades.LimpiarPantalla();
-                        //ManejadorEmpleado.Voucher();
-                        Utilidades.Pausa();
+                        Voucher.VoucherMenu(emple);
                         break;
 
                     case "5":
